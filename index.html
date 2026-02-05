@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poem Memory Game</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6c5ce7">
+</head>
+
+<body>
+
+<h2>🧠 Poem Memory Trainer</h2>
+
+<select id="poemSelect"></select>
+<button id="newPoemBtn">New Poem</button>
+<br>
+
+<textarea id="poemInput" placeholder="Paste poem here..."></textarea>
+<br>
+
+<button id="startBtn">Start Game</button>
+<button id="hintBtn">Hint</button>
+
+<div id="game">
+    <div id="topBar">
+        <span id="progress">Word 0/0</span>
+        <span id="timer">⏱ 0s</span>
+    </div>
+    <div id="options"></div>
+</div>
+
+<div id="result"></div>
+
+<!-- Hint Modal -->
+<div id="hintModal" class="modal">
+  <div class="modal-content">
+    <span id="closeHint">&times;</span>
+    <h3>Full Poem</h3>
+    <pre id="fullPoem"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
